@@ -1,0 +1,6 @@
+# sparccord has no Sunstorm dependencies.
+# Requires Solaris system packages:
+#   SUNWmfrun  - Motif runtime
+#   SUNWxwplt  - X Window platform
+#   SUNWdtbas  - CDE base
+# Also requires discord-bridge running on a network host (not packaged).

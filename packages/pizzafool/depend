@@ -1,0 +1,5 @@
+# pizzafool has no Sunstorm dependencies.
+# Built-in XPM parser — no libXpm needed.
+# Requires Solaris system packages:
+#   SUNWmfrun  - Motif runtime
+#   SUNWxwplt  - X Window platform

@@ -1,0 +1,21 @@
+# Sunstorm Package Dependencies
+# Format: PACKAGE DEPENDS_ON [DEPENDS_ON ...]
+# Used by solpkg and sst-deps.sh for dependency resolution.
+
+# === Foundation (no dependencies) ===
+SSTbinut
+SSTlgcc1
+
+# === GCC Toolchain ===
+SSTgcc49  SSTbinut SSTlgcc1
+SSTlstdc  SSTlgcc1
+SSTlstdd  SSTlstdc
+SSTg49cx  SSTgcc49 SSTlstdc SSTlstdd
+SSTg49cf  SSTgcc49 SSTlgcc1
+SSTg49co  SSTgcc49 SSTlgcc1
+SSTlgomp  SSTlgcc1
+
+# === Applications (standalone) ===
+SSTslpkg
+SSTpzfol
+SSTspcrd

@@ -1,0 +1,17 @@
+#!/bin/sh
+# postinstall for SSTgcc49
+# Creates a profile snippet for PATH setup
+mkdir -p /etc/profile.d 2>/dev/null
+cat > /etc/profile.d/sunstorm.sh << 'EOF'
+# Sunstorm distribution PATH setup
+if [ -d /opt/sunstorm/gcc49/bin ]; then
+    PATH=/opt/sunstorm/gcc49/bin:/opt/sunstorm/bin:$PATH
+    export PATH
+fi
+if [ -d /opt/sunstorm/lib ]; then
+    LD_LIBRARY_PATH=/opt/sunstorm/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}
+    export LD_LIBRARY_PATH
+fi
+EOF
+echo "Sunstorm: PATH configured in /etc/profile.d/sunstorm.sh"
+echo "Run '. /etc/profile.d/sunstorm.sh' or log in again to activate."
