@@ -14,13 +14,13 @@ distributions.
 All Sunstorm packages install to:
 
 ```
-/opt/sunstorm
+/opt/sst
 ```
 
 Versioned compilers install to sub-prefixes:
 
 ```
-/opt/sunstorm/gcc    — GCC
+/opt/sst/gcc    — GCC
 ```
 
 ## Package Naming
@@ -66,7 +66,7 @@ Sunstorm packages are cross-compiled on an x86_64 Linux host targeting
 ## Installing
 
 Packages are distributed as gzipped SVR4 datastreams. Install with
-[solpkg](https://github.com/julianwolfe/solpkg) or directly with `pkgadd`:
+[solpkg](https://github.com/firefly128/solpkg) or directly with `pkgadd`:
 
 ```sh
 # Via solpkg (auto-resolves dependencies):
@@ -78,8 +78,8 @@ gunzip < SSTgcc-4.9.4-1.sst-sunos5.7-sparc.pkg.gz | pkgadd -n -d /dev/stdin all
 
 ## Repository
 
-Pre-built packages are published as GitHub releases in the
-[sunstorm-releases](https://github.com/julianwolfe/sunstorm-releases) repo.
+Pre-built packages are published as
+[GitHub releases](https://github.com/firefly128/sunstorm/releases) on this repo.
 
 ## Dependency Map
 
