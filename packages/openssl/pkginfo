@@ -1,7 +1,7 @@
 PKG="SSTossl"
 NAME="openssl - OpenSSL cryptography toolkit"
 ARCH="sparc"
-VERSION="1.1.1w,REV=1"
+VERSION="3.4.4,REV=1"
 CATEGORY="system"
 VENDOR="Sunstorm Project"
 EMAIL="julian@sunstorm"
