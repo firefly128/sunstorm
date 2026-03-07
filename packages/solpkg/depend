@@ -1,7 +1,9 @@
-# solpkg loads OpenSSL at runtime via dlopen — no hard Sunstorm deps.
-# Requires Solaris system packages:
-#   SUNWmfrun  - Motif runtime (for GUI)
-#   SUNWxwplt  - X Window platform (for GUI)
-# And TGCware OpenSSL + CA certs for HTTPS downloads:
-P SBossl     TGCware OpenSSL shared libraries
-P SBcacrt    TGCware curl CA certificate bundle
+# spm loads OpenSSL at runtime via dlopen for HTTPS.
+# Bootstrap deps: zlib, libsolcompat, prngd, openssl.
+P SSTzlib   Data compression library
+P SSTlsolc  POSIX compatibility library
+P SSTprngd  Entropy daemon for OpenSSL
+P SSTossl   OpenSSL cryptography toolkit
+# Requires Solaris system packages for the GUI:
+P SUNWmfrun  Motif RunTime Kit
+P SUNWxwplt  X Window System platform software
