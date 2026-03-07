@@ -1,0 +1,8 @@
+P SSTlsolc  POSIX compatibility library
+P SSTzlib   Data compression library
+P SSTpcre2  Perl-compatible regular expressions
+P SSTossl   OpenSSL cryptography toolkit
+P SSTcurl   Command line URL transfer tool
+P SSTexpat  XML parsing library
+P SSTliconv Character encoding conversion library
+P SSTperl   Perl programming language

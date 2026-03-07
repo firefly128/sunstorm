@@ -55,6 +55,21 @@ SSTossl   SSTlsolc SSTzlib
 SSTcurl   SSTlsolc SSTzlib SSTossl
 SSTwget   SSTlsolc SSTossl
 
+# === Applications (SSH) ===
+SSTossh   SSTlsolc SSTzlib SSTossl
+
+# === Development Essentials ===
+SSTexpat  SSTlsolc
+SSTliconv SSTlsolc
+SSTbison  SSTlsolc SSTm4
+SSTflex   SSTlsolc
+SSTgtxt   SSTlsolc SSTliconv
+SSTperl   SSTlsolc
+SSTtxinf  SSTlsolc SSTperl
+SSTgit    SSTlsolc SSTzlib SSTpcre2 SSTossl SSTcurl SSTexpat SSTliconv SSTperl
+SSTvim    SSTlsolc SSTncurs
+SSTscrn   SSTlsolc SSTncurs
+
 # === Applications (standalone) ===
 SSTslpkg
 SSTpzfol
